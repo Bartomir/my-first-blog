@@ -12,6 +12,8 @@
 
 .glyphicon {
   vertical-align: middle;
+  line-height: inherit;
+  top: inherit;
 }
 
 .content {
