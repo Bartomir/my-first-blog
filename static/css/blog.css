@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+.glyphicon {
+  vertical-align: middle;
+}
+
 .content {
   margin-left: 40px;
 }
