@@ -21,6 +21,7 @@ def _str_(self):
     return self.title
 
 # SliderImageUploadModel.
-class ImageUploadForm(models.Model):
+class Image(models.Model):
     image = forms.ImageField()
-    model_pic = models.ImageField(upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
+    image_file = models.ImageField(upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
+    title = models.CharField(max_length=50, null=True)
