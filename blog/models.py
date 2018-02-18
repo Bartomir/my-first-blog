@@ -13,15 +13,9 @@ class Post(models.Model):
     published_date = models.DateTimeField(
         blank=True, null=True)
 
-def publish(self):
-    self.published_date = timeone.now()
-    self.save()
+    def publish(self):
+        self.published_date = timeone.now()
+        self.save()
 
-def _str_(self):
-    return self.title
-
-# SliderImageUploadModel.
-class Image(models.Model):
-    image = forms.ImageField()
-    image_file = models.ImageField(upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
-    title = models.CharField(max_length=50, null=True)
+    def __str__(self):
+        return self.title
